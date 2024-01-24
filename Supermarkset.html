@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script>
+            function check()
+            {
+                if(document.forms.f2.q1.value=='')
+                {
+                    alert("Enter the item!!!!");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="f1" id="f2" onsubmit="return check()" action="calculation.php" method="post" >
+        <table border="2">
+            <tr>
+                <th colspan=3>MAX SUPER MARKET</th>
+            </tr>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                
+            </tr>
+            <tr>
+                <td><select name="t1" id="t2">
+                        <option value="Pen">Pen</option>
+                        <option value="Pencil">Pencil</option>
+                        <option value="Eraser">Eraser</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="1" name="q1">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="submit" value="submit" name="s1">
+                    <input type="reset" value="Clear">
+                </th>
+            </tr>
+           
+        </table>
+        </form>
+    </body>
+</html>
